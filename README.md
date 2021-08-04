@@ -1,2 +1,2 @@
-# seg_labs
-Laboratório SEG
+# Atividades separada por diretório. Laboratório SEG-UFU
+
