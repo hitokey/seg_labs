@@ -23,8 +23,6 @@ def spoof_pkt(pkt):
             send(newpkt)
 
     elif pkt[IP].src == IP_B and pkt[IP].dst == IP_A:
-        # Create new packet based on the captured one
-        # Do not make any change
         newpkt = IP(bytes(pkt[IP]))
         del(newpkt.chksum)
         del(newpkt[TCP].chksum)
