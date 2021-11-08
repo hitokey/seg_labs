@@ -28,7 +28,7 @@ def spoof_pkt(pkt):
         newpkt = IP(bytes(pkt[IP]))
         del(newpkt.chksum)
         del(newpkt[TCP].chksum)
-        #newdata = 'F'
+        newdata = data.replace(b'a',b'F')
         send(newpkt/newdata)
 
 
